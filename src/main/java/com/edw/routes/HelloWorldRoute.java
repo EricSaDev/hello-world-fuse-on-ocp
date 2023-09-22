@@ -22,7 +22,7 @@ public class HelloWorldRoute extends RouteBuilder {
                 .route()
                 .setHeader(Exchange.HTTP_RESPONSE_CODE, simple("200"))
                 .setHeader(Exchange.CONTENT_TYPE, simple("application/json"))
-                .setBody(constant("{\"hello\":\"world\"}"))
+                .setBody(constant("{\"demo\":\"Deploying Fuse 7.9 to Openshift 4\",\"hello\":\"world\"}"))
                 .endRest()
         ;
     }
